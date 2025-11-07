@@ -1,3 +1,4 @@
+import pytest
 from src.checksum import modulo11Checksum
 
 
