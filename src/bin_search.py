@@ -1,4 +1,6 @@
 def binSearch(xs: list[int], x: int):
+    if x not in xs:
+        raise ValueError("такого элемента нет")
     if xs != sorted(xs):
         raise ValueError("Массив не отсортирован")
     left, right = 0, len(xs) - 1
