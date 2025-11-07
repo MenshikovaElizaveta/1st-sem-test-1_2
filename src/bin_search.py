@@ -1,4 +1,6 @@
 def binSearch(xs: list[int], x: int):
+    if xs != sorted(xs):
+        raise ValueError("Массив не отсортирован")
     left, right = 0, len(xs) - 1
     while left < right:
         mid = (left + right) // 2
